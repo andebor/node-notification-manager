@@ -63,7 +63,7 @@ if len(missing_env_vars) != 0:
 
 if hasattr(config, "local_test"):
     if str_to_bool(config.local_test):
-        with open('example_config.json', 'r') as f:
+        with open('example_rules.json', 'r') as f:
             raw_example = f.read()
             rules = json.loads(raw_example)
 else:
